@@ -1,9 +1,14 @@
-<style>
+<!--
+COMMENT IN <style>, when exporing to PDF. 
+Github does not support styling
+-->
+
+<!--<style>
 h2 {
 	font-family: Courier;
 }
 
-</style>
+</style>-->
 
 <div style="font-family: Courier; text-align: center; text-transform: uppercase;">
 	Project 
