@@ -2,6 +2,21 @@
 <img src="pictures/stereo_build.jpg" style="border-radius: 50px" />
 Repository for my Arduino based carstereo project. Hulken. The Arduino will analyze and divide headunit sound signal, divide the signal in 7 specters. Then the frequenzies will be used to create a visual Equalizer on a 16x32 matrix, and puls EQ-ledstrips with the beat.
 
+## Prosjekt status
+### STATUS: Under utvikling
+Endelig igang etter å ha funnet tid og motivasjon, etter at _harddisken med alle scripts, tanker, tegninger, osv ble ødelagt_.
+
+Trenger enda ett par ting samt flere ledstrips, men grunnet trang økonomi må dette vente.
+
+## Arkitektur
+ **Mistet** pga. **faulty external harddrive**. Så må lage nytt..
+
+## Scripts 
+Følgene scripts er de som skal brukes
+
+- `OneStripEQ_noLeds.ino` ( intil jeg har fått kjøpt flere ledstrips. da skal dette **scriptet opdateres** til å håndtere flere)
+- `Matrix_spectrum.ino` har **mistet scriptet** for **matrix** pga. **faulty external harddrive**. Så må skrive nytt..
+
 ## Bilens system
 Bilen har ~13 v —> vi kaller dette 12v i bilens system
 

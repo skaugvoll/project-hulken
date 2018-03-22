@@ -4,6 +4,8 @@ Author: Sigve Skaugvoll
 Version: 1.0
 Created: 03.02.16
 Email: skaugvoll@gmail.com
+
+Board: Arduino Genuino Uno
 *********************************************************************************/
 
 //NeoPixel Strip:
@@ -23,10 +25,6 @@ Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ80
 #define DC_One A0
 #define DC_Two A1
 
-
-//Define LED connections on the shield
-//int LED[] = {7, 8, 9, 10, 11, 12, 13};
-
 //Define spectrum variables
 int freq_amp;
 int Frequencies_One[7];
@@ -41,13 +39,6 @@ void setup() {
   pixels.begin(); //prepare the data pin for NeoPixel output.
   pixels.show(); // Initialize all pixels to 'off'
   
-  
-  //Set LED pin configurations
-//  for(i=0; i<7; i++)
-//  {
-//    pinMode(LED[i], OUTPUT);
-//    digitalWrite(LED[i], LOW);
-//  }
   
   //Set Spectrum Shield pin configurations
   pinMode(STROBE, OUTPUT);
@@ -75,8 +66,7 @@ void setup() {
 void loop() {
   Read_Frequencies();
   eq();
-//  Graph_Frequencies(); // for using external leds aswell
-//  Puls_LEDS();
+//  Puls_LEDS(); // ikke ferdig implementert. fungerer halveis.. men noe mystisk shit
   
   delay(50);
  
@@ -95,19 +85,6 @@ void Read_Frequencies(){
     digitalWrite(STROBE, LOW);
   }
 }
-
-/*******************Light LEDs based on frequencies*****************************/
-//void Graph_Frequencies(){
-//   for( i= 0; i<7; i++)
-//   {
-//     if(Frequencies_Two[i] > Frequencies_One[i]){
-//        analogWrite(LED[i], Frequencies_Two[i]/4);
-//     }
-//     else{
-//        analogWrite(LED[i], Frequencies_One[i]/4);
-//     }
-//   }
-//}
 
 
 void eq(){
