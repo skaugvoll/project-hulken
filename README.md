@@ -88,5 +88,26 @@ Her lister jeg relevante kilder brukt for mitt prosjekt.
 - **_Examples_**: https://github.com/sparkfun/Spectrum\_Shield
 
 ### Arduino
+Kommer...
+
 #### Uno
+Kommer...
+
 #### Mega
+Kommer...
+
+### Unsorted
+Her er mange linker som jeg tror kan hjepe meg eller som jeg har brukt. 
+
+- http://tronixstuff.com/2013/01/31/tutorial-arduino-and-the-msgeq7-spectrum-analyzer/
+- https://www.tweaktown.com/articles/6437/hands-on-look-at-adafruit-s-neopixel-rgb-led-strip/index.html
+- https://www.adafruit.com/product/420
+- https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-use
+- https://learn.sparkfun.com/tutorials/arduino-shields
+- https://www.sparkfun.com/products/13116
+- https://learn.sparkfun.com/tutorials/spectrum-shield-hookup-guide
+- https://github.com/sparkfun/Spectrum_Shield/tree/HW_1.6_FW_1.1
+- https://cdn.sparkfun.com/datasheets/Dev/Arduino/Shields/MSGEQ7_5-11.pdf
+- https://cdn.sparkfun.com/datasheets/Dev/Arduino/Shields/Spectrum_Shield_v16.pdf
+- https://thebillieblaze.blogspot.com/2014/03/spectrum-analyzer-with-arduino-adafruit.html
+
