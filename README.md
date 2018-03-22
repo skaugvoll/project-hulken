@@ -1,6 +1,19 @@
-# Project-Hulken
+<style>
+h2 {
+	font-family: Courier;
+}
+
+</style>
+
+<div style="font-family: Courier; text-align: center; text-transform: uppercase;">
+	Project 
+	<hr style="background-color: green; width: 200px; "/>
+	<h1 style="margin-top: -10px;font-size: 40px; color: green;"> Hulken</h1>
+</div>
+
 <img src="pictures/stereo_build.jpg" style="border-radius: 50px" />
-Repository for my Arduino based carstereo project. Hulken. The Arduino will analyze and divide headunit sound signal, divide the signal in 7 specters. Then the frequenzies will be used to create a visual Equalizer on a 16x32 matrix, and puls EQ-ledstrips with the beat.
+
+This is a Repository for my Arduino based car stereo project, called Hulken. The Arduino(s) will analyze and divide headunit sound signals, divide the signal in 7 specters. Then the frequenzies will be used to create a visual Equalizer on a 16x32 matrix, and puls EQ-ledstrips with the beat.
 
 ## Prosjekt status
 ### STATUS: Under utvikling
@@ -47,23 +60,23 @@ Bilen har ~13 v —> vi kaller dette 12v i bilens system
 
 ## Dokumentasjon under utvikling
 ### Bilder
-### LedStrips
+#### LedStrips
 <img src="pictures/ledStrip_dev_overview.jpg" style="border-radius: 50px" />
 
 <img src="pictures/ledStrip_dev_1.jpg" style="border-radius: 50px" />
 
 <img src="pictures/ledStrip_dev_2.jpg" style="border-radius: 50px" />
 
-### Matrix
-### I bilen
+#### Matrix
+#### I bilen
 
 Mer Kommer snart...
 ### Video
-### LedStrips
+#### LedStrips
 <video src="videos/ledStrips_dev_snut.mp4" controls poster="poster.jpg" width="320" height="240" style="border-radius: 50px" />
 
-### Matrix
-### I bilen
+#### Matrix
+#### I bilen
 
 Kommer snart...
 
