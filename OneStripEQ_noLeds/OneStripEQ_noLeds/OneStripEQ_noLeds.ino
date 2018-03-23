@@ -80,7 +80,7 @@ void Read_Frequencies(){
   {
     Frequencies_One[freq_amp] = analogRead(DC_One);
     Frequencies_Two[freq_amp] = analogRead(DC_Two); 
-   
+
     digitalWrite(STROBE, HIGH);
     digitalWrite(STROBE, LOW);
   }
