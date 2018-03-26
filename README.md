@@ -39,7 +39,7 @@ Trenger enda ett par ting samt flere ledstrips, men grunnet trang økonomi må d
 Følgene scripts er de som skal brukes
 
 - `OneStripEQ_noLeds.ino` ( intil jeg har fått kjøpt flere ledstrips. da skal dette **scriptet opdateres** til å håndtere flere)
-- `Matrix_spectrum.ino` har **mistet scriptet** for **matrix** pga. **faulty external harddrive**. Så må skrive nytt..
+- `Spectrum_and_matrix.ino` har **mistet scriptet** for **matrix** pga. **faulty external harddrive**. Så må skrive nytt..
 
 ## Bilens system
 Bilen har ~13 v —> vi kaller dette 12v i bilens system

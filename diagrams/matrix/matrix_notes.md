@@ -77,3 +77,44 @@ OE (output enable) switches the LEDs off when transitioning from one row to the 
 > CLK
 > (Any of digital pins 10-13 and 50-53 can be used for this function on the Mega, with the corresponding wiring change. The examples all reference pin 11, as pin 10 may be in use for the 32x32 panel.)
 
+## How to "Draw":
+### Coordinates: 
+The coordinates `x` and `y` corresponds to the the individual pixels of the display. 
+
+- `x` = **column**
+- `y` = **row**
+
+- `(0,0) is in the top left corner`, `(31, 15) is in the bottom right` (remember that we start counting at 0 here!)
+
+### Methods:
+- `drawPixel(x,y,color);`
+- `fillRect(x,y, widh, height, color);` // fill
+- `drawRect(x,y,widht, height, color);` // stroke
+- `drawLine(xStart,yStart, xEnd,yEnd, color);`
+- `drawCircle(xCenter, yCenter, radiusInPixels, color);` // stroke
+- `fillCircle();` // fill
+- `fillScreen(color);` // fill the entire screen with a single color
+- `setCursor(startAtTopLeft, pixelOfSpacing);`
+- `setTextSize(z);` // size 1 == 8 pixels high
+- `setTextColor(color);`
+- `print("text");` // write text to matrix
+- `Color333(7, 0, 7)` // values go from [0,7], (r,g,b)
+
+### one pixel :: drawPixel()
+To light up or draw on pixel on the matrix
+
+- `matrix.drawPixel(x, y, matrix.Color333(r, g, b));` 
+
+### rectangle :: fillRect()
+fill the screen with green by drawing a really large rectangle. The first two arguments are the top left point, then the width in pixels, and the height in pixels, finally the color
+
+- fix / fill the screen with green
+ - `fillRect(0, 0, 32, 16, matrix.Color333(0, 7, 0));`
+
+### rectangle :: drawRectangle()
+- draw a box in yellow, just strokes
+ - `matrix.drawRect(0, 0, 32, 16, matrix.Color333(7, 7, 0));`
+
+
+
+
