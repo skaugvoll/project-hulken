@@ -98,7 +98,12 @@ The coordinates `x` and `y` corresponds to the the individual pixels of the disp
 - `setTextSize(z);` // size 1 == 8 pixels high
 - `setTextColor(color);`
 - `print("text");` // write text to matrix
-- `Color333(7, 0, 7)` // values go from [0,7], (r,g,b)
+- `Color333(7, 0, 7);` // values go from [0,7], (r,g,b)
+- `swapBuffers(false || true);` // false = Update display
+- `height();`
+- `width();`
+- `ColorHSV(value * 3, 255, 255, true);`
+- 
 
 ### one pixel :: drawPixel()
 To light up or draw on pixel on the matrix

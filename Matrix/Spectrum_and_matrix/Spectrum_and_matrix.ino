@@ -58,12 +58,15 @@ void setup() {
   matrix.fillScreen(matrix.Color333(0, 0, 7));
   delay(333);
   matrix.fillScreen(matrix.Color333(0, 0, 0)); // turn the matrix black.
+  delay(500);
+  matrix.fillScreen(matrix.Color333(7, 7, 7));
+  delay(333);
   
 
   /**************************
           SPECTRUM 
   ***************************/
-  Serial.begin(9600);
+  Serial.begin(115200);
   //Set spectrum Shield pin configurations
   pinMode(STROBE, OUTPUT);
   pinMode(RESET, OUTPUT);
@@ -88,10 +91,26 @@ void setup() {
 
 
 /**************************  Main Function Loop  *****************************/
+long loop_counter = 0;
 void loop() {
+  // Clear background
+  matrix.fillScreen(0);
+  
   Read_Frequencies();
-  drawMatrixCombined();
-  delay(50);
+//  drawMatrixCombined();
+//  drawMatrixVS();
+  testMatrix();
+
+
+  
+  
+  // Update display
+  matrix.swapBuffers(false);
+  Serial.print("Loop counter:\t");
+  Serial.println(loop_counter);
+  loop_counter++;
+  delay(300);
+ 
  
 }
 
@@ -109,6 +128,19 @@ void Read_Frequencies(){
 }
 
 /******************* DRAW MATRIX *****************************/
+
+long R_randNumber;
+long G_randNumber;
+long B_randNumber;
+void testMatrix() {
+  R_randNumber = random(0,8);
+  G_randNumber = random(0,8);
+  B_randNumber = random(0,8);
+  matrix.drawPixel(0,15, matrix.Color333(2,7,2));
+  delay(10);
+}
+
+
 
 void drawMatrixVS() {
   /* 
@@ -227,4 +259,5 @@ void drawLineWithSplitColors(int lineHeight, int column) {
 uint16_t getColor(int x) {
   return matrix.Color333(2,7,2);
 }
+
 
